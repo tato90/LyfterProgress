@@ -1,0 +1,71 @@
+
+
+
+Ver video en Youtube
+
+1. Si tiene computadora y internet 
+   a. Ingresar a la aplicaion Youtube
+   b. Abrir el video 
+2. Si no, si tiene smartv, o si tiene telefono smart
+   a. Ingresar a la aplicaion  Youtube
+   b. Abrir el video
+3. Sino
+   a. Busque alguien que le preste un telegono, computadora o televisor con internet y pidalo prestado 
+   b. Ingresar a la aplicaion Youtube
+   c. ver el video
+
+4. FIN    
+
+
+Rutina Diaria 
+
+1. Si el dia es Lunes o Miercoles o Jueves o Viernes
+  a. Levantarme de la cama
+  b. lavarme los dientes
+  c. Alimentar las mascotas 
+  d. preparar desayuno 
+  e. desayunar 
+  f. ducharme 
+  g. trabajar de 11 a 1
+  h. almorzar algo 
+  i. trabajar de 2 a 6
+  j. hacer ejercico 
+  k. ducharme
+  l. cenar 
+  m. ver tv
+  n. dormir 
+  
+ 2. Si el dia es martes 
+  a. Levantarme de la cama
+  b. lavarme los dientes
+  c. Alimentar las mascotas 
+  d. preparar desayuno 
+  e. desayunar 
+  f. ducharme 
+  g. manejar a la oficina 
+  h. trabajar de 11 a 1 
+  i. almorzar 
+  j. trabnajar de 2 a 7 
+  k. manejar a la cancha de futbol 5 
+  l. jugar futbol 
+  m. manejar a casa 
+  n. ducharme 
+  ñ. dormir 
+  
+  
+ 3. Si el dia es sabado o domingo 
+  a. Levantarme de la cama
+  b. lavarme los dientes
+  c. Alimentar las mascotas 
+  d. preparar desayuno 
+  e. desayunar 
+  f. ducharme 
+  g. salir a pasear 
+  h. regresar a casa
+  i. ducharme 
+  j. cenar 
+  k. ver tv
+  l. dormir 
+  
+  
+ 4.FIN

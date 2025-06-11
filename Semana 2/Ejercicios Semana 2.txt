@@ -1,0 +1,106 @@
+Ejercicios Semana 2 
+
+
+Ejercicio 1 
+
+Inicio
+Definir precioProducto
+Definir precioFinal
+Mostrar "Ingrese el precio del producto"
+Pedir precioProducto
+Si (precioProducto<100)
+  precioFinal = precioProducto - (precioProducto * 0.02)
+Sino (precioProducto>=100)
+  precioFinal = precioProducto - (precioProducto * 0.10)
+FinSi
+Mostrar "El precio del producto con descuento es"
+Mostrar precioFinal
+Fin
+
+
+Ejercicio 2 
+
+Inicio 
+Definir tiempoSegundos 
+Definir tiempofaltante
+
+
+Mostrar "Ingrese el tiempo en segundos"
+Pedir tiempoSegundos
+Si (tiempoSegundos<600)
+  tiempofaltante = 600 - tiempoSegundos
+  Mostrar "Faltan estos segundos para los 10 minutos:"
+  Mostrar tiempofaltante
+Sino (tiempoSegundos>=600)
+  Mostrar "Mayor"
+FinSi  
+Fin
+
+
+Ejercicio 3 
+
+Inicio
+Definir numeroFinal 
+Definir sumaNumeros
+Mostrar "Ingrese el numero final"
+Pedir numeroFinal
+sumaNumeros = (numeroFinal(numeroFinal+1))/2
+FinSi
+Mostrar sumaNumeros
+Fin
+
+
+Ejercicios Extra
+
+1.
+Inicio
+Definir primero
+Definir segundo
+Mostrar "Ingrese el primer numero"
+Pedir primero
+Mostrar "Ingrese el segundo numero"
+Pedir segundo
+Si (primero>segundo)
+Mostrar segundo, primero 
+Sino (primero<segundo)
+Mostrar primero, segundo
+FinSi
+Fin
+
+
+2. 
+Inicio
+Definir velocidadkm
+Definir velocidadm
+Mostrar "Ingrese su velocidad en km"
+Pedir velocidadkm
+velocidadm = velocidadkm * 3.6
+Mostrar "Su velocidad en m/s es", velocidadm
+Fin
+
+3.
+Inicio
+Definir sexo
+Definir cantidadPersonas
+Definir cantHombres
+Definir cantMujeres
+Definir porceHombres
+Definir perceMujeres
+cantMujeres = 0
+cantHombres = 0
+contador = 0
+Mostrar "Ingrese la cantidad de personas"
+Pedir cantidadPersonas
+Si (contador<=cantidadPersonas)
+Mostrar "Ingrese el sexo de la persona, 1 para mujer y 2 si es hombre"
+Pedir sexo
+ Si (sexo==1)
+ cantMujeres = cantMujeres + 1
+ Sino 
+ cantHombres = cantHombres + 1
+contador = contador + 1
+porceHombres = (cantHombres * 100)/cantidadPersonas
+perceMujeres = (cantMujeres * 100)/cantidadPersonas
+Mostrar "Mujeres :",cantMujeres 
+Mostrar "Hombres :",cantHombres
+Fin
