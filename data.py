@@ -20,8 +20,7 @@ def export_csv(students, filename='students.csv'):
     except:
         print("Error exporting to CSV.")
 
-def import_csv():
-    filename = 'students.csv'
+def import_csv(filename='students.csv'):
     if not os.path.exists(filename):
         print("No CSV file found.")
         return []
