@@ -1,36 +1,34 @@
 import actions
+from data import export_csv, import_csv
 
 def show_menu():
-    while True:
+    students = []  # local variable fix requested 
+
+    while True: # here also deleted the options that were doing the same 
         print("=== Student Control System ===")
         print("1. Add Student")
         print("2. Show Students")
-        print("3. Save Data")
-        print("4. Load Data")
-        print("5. Show Top 3 Students")
-        print("6. Show Average of All Students")
-        print("7. Export All Data to CSV")
-        print("8. Import Data from CSV")
-        print("9. Exit")
+        print("3. Show Top 3 Students")
+        print("4. Show Overall Average")
+        print("5. Export Data to CSV")
+        print("6. Import Data from CSV")
+        print("7. Exit")
+        
         choice = input("Choose an option: ")
 
         if choice == '1':
-            actions.add_student()
+            students = actions.add_student(students)
         elif choice == '2':
-            actions.show_students()
+            actions.show_students(students)
         elif choice == '3':
-            actions.save_data()
+            actions.show_top_students(students)
         elif choice == '4':
-            actions.load_data()
+            actions.show_overall_average(students)
         elif choice == '5':
-            actions.show_top_students()
+            export_csv(students)
         elif choice == '6':
-            actions.show_individual_averages()
+            students = import_csv()
         elif choice == '7':
-            actions.export_csv()
-        elif choice == '8':
-            actions.import_csv()
-        elif choice == '9':
             print("Goodbye!")
             break
         else:
