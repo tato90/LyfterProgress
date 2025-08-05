@@ -1,8 +1,3 @@
-import data
-
-# Lista global para guardar todos los estudiantes
-students = []
-
 def ask_for_grade(prompt):
     while True:
         try:
@@ -14,7 +9,7 @@ def ask_for_grade(prompt):
         except:
             print("Please enter a valid number.")
 
-def add_student():
+def add_student(students):
     full_name = input("Full Name: ")
     section = input("Section (e.g., 11B): ")
     grade1 = ask_for_grade("Spanish Grade (0-100): ")
@@ -35,8 +30,9 @@ def add_student():
 
     students.append(student)
     print("Student added.\n")
+    return students
 
-def show_students():
+def show_students(students):
     if not students:
         print("No students registered.\n")
         return
@@ -48,14 +44,7 @@ def show_students():
         average = total / 4
         print(f"  Average: {average:.2f}\n")
 
-def save_data():
-    data.export_csv(students)
-
-def load_data():
-    global students
-    students = data.import_csv()
-
-def show_top_students():
+def show_top_students(students):
     if not students:
         print("No students registered.\n")
         return
@@ -64,9 +53,7 @@ def show_top_students():
         total = sum(s['grades'].values())
         avg = total / 4
         students_avg.append((s, avg))
-    # Ordena promedios
     students_avg.sort(key=lambda x: x[1], reverse=True)
-
     print("Top 3 students:\n")
     for i in range(min(3, len(students_avg))):
         s, avg = students_avg[i]
@@ -76,7 +63,7 @@ def show_top_students():
             print(f"     {subject}: {grade}")
         print()
 
-def show_individual_averages():
+def show_individual_averages(students):
     if not students:
         print("No students registered.\n")
         return
@@ -85,10 +72,14 @@ def show_individual_averages():
         average = total / len(s['grades'])
         print(f"{s['full_name']}: {average:.2f}")
 
-# Funciones para exportar/importar CSV
-def export_csv():
-    data.export_csv(students)
-
-def import_csv():
-    global students
-    students = data.import_csv()
+def show_overall_average(students):
+    if not students:
+        print("No students registered.\n")
+        return
+    total_promedio = 0
+    for s in students:
+        total = sum(s['grades'].values())
+        promedio_estudiante = total / len(s['grades'])
+        total_promedio += promedio_estudiante
+    promedio_total = total_promedio / len(students)
+    print(f"The overall average of all students is: {promedio_total:.2f}\n")
