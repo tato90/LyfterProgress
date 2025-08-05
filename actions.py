@@ -76,10 +76,10 @@ def show_overall_average(students):
     if not students:
         print("No students registered.\n")
         return
-    total_promedio = 0
+    total_avg_sum = 0
     for s in students:
         total = sum(s['grades'].values())
-        promedio_estudiante = total / len(s['grades'])
-        total_promedio += promedio_estudiante
-    promedio_total = total_promedio / len(students)
-    print(f"The overall average of all students is: {promedio_total:.2f}\n")
+        student_avg = total / len(s['grades'])
+        total_avg_sum += student_avg
+    overall_avg = total_avg_sum / len(students)
+    print(f"The overall average of all students is: {overall_avg:.2f}\n")
